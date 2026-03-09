@@ -1,0 +1,253 @@
+
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-section button {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
+
+.nav {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background: #1d4ed8;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main {
+  background: #020617;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 400px;
+}
+
+/* Auth */
+.auth-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #020617;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.auth-toggle {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.auth-toggle button {
+  flex: 1;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background: #111827;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.auth-toggle button.active {
+  background: #1d4ed8;
+  color: white;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth-form input {
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.auth-form button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border: none;
+  background: #22c55e;
+  color: #022c22;
+  cursor: pointer;
+}
+
+.error {
+  color: #f97316;
+  font-size: 0.85rem;
+}
+
+/* Learn view */
+.learn {
+  display: flex;
+  gap: 1rem;
+}
+
+.terms-list {
+  flex: 1;
+  max-width: 40%;
+  border-right: 1px solid #1f2937;
+  padding-right: 1rem;
+}
+
+.term-card {
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: #111827;
+  cursor: pointer;
+}
+
+.term-card:hover {
+  background: #1f2937;
+}
+
+.term-card h3 {
+  margin: 0;
+}
+
+.term-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.term-card .pill {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  background: #1d4ed8;
+  font-size: 0.7rem;
+}
+
+.term-card.active {
+  border: 1px solid #3b82f6;
+}
+
+.term-detail {
+  flex: 2;
+}
+
+.term-detail pre {
+  background: #020617;
+  padding: 0.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* Game */
+.game .clue-label {
+  font-weight: bold;
+}
+
+.game .clue-text {
+  margin: 0.5rem 0 1rem;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.option-btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+.option-btn.option-selected {
+  border-color: #3b82f6;
+  background: #1d4ed8;
+}
+
+.game-actions button {
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border: none;
+  background: #22c55e;
+  color: #022c22;
+  cursor: pointer;
+}
+
+.game-actions button:nth-child(2) {
+  background: #0ea5e9;
+  color: #022c22;
+}
+
+.answer-result {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #111827;
+  border-radius: 4px;
+}
+
+.answer-result pre {
+  white-space: pre-wrap;
+}
+
+/* Hint */
+.hint-btn {
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  border: none;
+  background: #facc15;
+  color: #111827;
+  cursor: pointer;
+}
+
+.hint-text {
+  margin: 0.3rem 0 1rem;
+  font-size: 0.9rem;
+  color: #fbbf24;
+}
+
+/* Dashboard */
+.stats p {
+  margin: 0.25rem 0;
+}
